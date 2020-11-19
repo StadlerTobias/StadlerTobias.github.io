@@ -9,9 +9,10 @@ body{
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40vh;
 }
 
-.imgBox{
+img{
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,5 +23,6 @@ img{
 
 a{
     text-decoration: none;
-    font-size: 4vw;
+    font-size: 3vw;
+    color: white;
 }
