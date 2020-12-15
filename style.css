@@ -51,7 +51,7 @@ a{
 }
 
 .element{
-    width: 10%;
+    width: auto;
     height: 2%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -82,7 +82,7 @@ a{
 
 
 /* small devices, 500px - 800px, 2-column layout */	
-@media (min-width:0px) and (max-width:1000px){
+@media (min-width:0px) and (max-width:940px){
 	.headerPic{
         opacity: 0;
     }
@@ -94,6 +94,7 @@ a{
     .element{
         height: 2%;
         width: auto;
+        text-align: center;
     }
 
     .headerText{
@@ -106,10 +107,17 @@ a{
     .flex-container{
         grid-template-columns: auto;
     }
+
+    .headerText{
+        font-size: 0%;
+    }
 }
 
 
 /* medium and large devices, > 800px, 3-column layout */	
-@media (min-width:1200px){
+@media (min-width:940px) and (max-width:1000px){
+    .flex-container{
+        grid-template-columns: auto auto;
+    }
 	
 }
