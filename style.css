@@ -90,7 +90,7 @@ a{
     .navigation{
         display: inline;
         background-image: url("nike2_zas8c6_c_scale,w_1637.jpg");               
-        background-size: 100%;
+        background-size: cover;
         position: absolute;
         box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
     }
