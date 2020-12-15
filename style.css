@@ -46,7 +46,7 @@ a{
     margin-right: auto;    
     z-index: 3;
     top: 0;    
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.521);    
     
 }
 
@@ -89,16 +89,26 @@ a{
 
     .navigation{
         display: inline;
+        background-image: url("nike2_zas8c6_c_scale,w_1637.jpg");               
+        background-size: 100%;
+        position: absolute;
+        box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
     }
 
     .element{
         height: 2%;
         width: auto;
-        text-align: center;
+        text-align: center;        
+    }
+
+    a{
+        color: white;
+        font-size: 6vh;        
     }
 
     .headerText{
         opacity: 0;
+        font-size: 0%;
     }
     .header{
         display: inline;
@@ -106,16 +116,15 @@ a{
 
     .flex-container{
         grid-template-columns: auto;
+        margin-top: 5vh;
     }
 
-    .headerText{
-        font-size: 0%;
-    }
+    
 }
 
 
 /* medium and large devices, > 800px, 3-column layout */	
-@media (min-width:940px) and (max-width:1000px){
+@media (min-width:940px) and (max-width:1200px){
     .flex-container{
         grid-template-columns: auto auto;
     }
