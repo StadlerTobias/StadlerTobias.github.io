@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;		
+    font-family: sans-serif;
+   	max-width: 98.2vw;	
 }
 
 a{
@@ -9,6 +10,8 @@ a{
     color: white;
     font-size: 1.5rem;
 }
+
+
 
 .buy{
     color: black;
@@ -31,7 +34,7 @@ a{
 
 .headerPic{
     position: relative;
-    width: 99.2vw;
+    
     
 }
 
@@ -108,13 +111,35 @@ a{
     margin-top: 3%;
 }
 
+.infoBox{
+    grid-row-gap: 7vh;
+    column-gap: 5vw;
+	display: grid;    
+    grid-template-columns: auto auto ;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+.textBox{
+    font-size: 1.5rem;  
+    
+}
+
+
+
+.infoPic{
+    width: 100%;
+}
 
 
 
 
 
 
-/* small devices, 500px - 800px, 2-column layout */	
+
+	
 @media (min-width:0px) and (max-width:940px){
 	.headerPic{
         opacity: 0;
@@ -150,11 +175,15 @@ a{
         margin-top: 5vh;
     }
 
+    .infoBox{
+        grid-template-columns: auto;
+    }
+
     
 }
 
 
-/* medium and large devices, > 800px, 3-column layout */	
+	
 @media (min-width:940px) and (max-width:1200px){
     .flex-container{
         grid-template-columns: auto auto;
